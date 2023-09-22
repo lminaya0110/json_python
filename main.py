@@ -1,4 +1,5 @@
 import json
+from structure_elems import take
 
 def read_json_return_structure(file_name):
     
@@ -8,4 +9,4 @@ def read_json_return_structure(file_name):
 countries_list = read_json_return_structure("countries.json")
 countries_states_list = read_json_return_structure("countries_states_cities.json")
 
-print()
+take(5, countries_list)
